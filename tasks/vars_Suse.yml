@@ -1,0 +1,3 @@
+---
+ifcfg_mode: "0600"
+ifcfg_location: "/etc/sysconfig/network"
