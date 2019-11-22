@@ -10,4 +10,15 @@ galaxy_info:
 
   galaxy_tags: []
 
+  platforms:
+  - name: RedHat
+    versions:
+    - all
+  - name: SUSE
+    versions:
+    - all
+  - name: openSUSE Leap
+    versions:
+    - all
+
 dependencies: []
