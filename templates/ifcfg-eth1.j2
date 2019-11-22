@@ -1,0 +1,12 @@
+# /etc/sysconfig/network-scripts/ifcfg-eth1
+
+BOOTPROTO=dhcp
+DEVICE=eth1
+ONBOOT=yes
+TYPE=Ethernet
+USERCTL=no
+DEFROUTE=no
+{% if ansible_os_family == "Suse" %}
+STARTMODE=auto
+ZONE=public
+{% endif %}
