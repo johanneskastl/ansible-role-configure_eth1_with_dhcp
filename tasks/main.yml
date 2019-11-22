@@ -1,0 +1,21 @@
+---
+# configure_eth1/tasks/main.yml
+
+- name: "Load variables"
+  include_vars: "{{ item }}"
+  with_first_found:
+    - "vars_{{ ansible_distribution }}.yml"
+    - "vars_{{ ansible_os_family }}.yml"
+    - "vars_default.yml"
+
+- name: "create {{ ifcfg_location }}/ifcfg-eth1"
+  template:
+    src: "templates/ifcfg-eth1.j2"
+    dest: "{{ ifcfg_location }}/ifcfg-eth1"
+    owner: "root"
+    group: "root"
+    mode: "{{ ifcfg_mode }}"
+  notify:
+    - "set eth1 to down"
+    - "set eth1 to up"
+    - "check eth1 settings"
