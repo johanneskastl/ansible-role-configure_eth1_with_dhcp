@@ -14,10 +14,10 @@ galaxy_info:
   - name: EL
     versions:
     - all
-  - name: SLES
+  - name: opensuse
     versions:
     - all
-  - name: opensuse
+  - name: SLES
     versions:
     - all
 
