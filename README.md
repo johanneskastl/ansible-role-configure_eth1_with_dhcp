@@ -1,3 +1,5 @@
+![Ansible Lint](https://github.com/johanneskastl/ansible-role-configure_eth1_with_dhcp/workflows/Ansible%20Lint/badge.svg)
+
 configure_eth1_with_dhcp
 =========
 
