@@ -11,13 +11,13 @@ galaxy_info:
   galaxy_tags: []
 
   platforms:
-  - name: RedHat
+  - name: EL
     versions:
     - all
-  - name: SUSE
+  - name: opensuse
     versions:
     - all
-  - name: openSUSE Leap
+  - name: SLES
     versions:
     - all
 

@@ -1,11 +1,11 @@
 ---
 # configure_eth1/handlers/main.yml
 
-- name: "set eth1 to down"
-  shell: "ifdown eth1"
+- name: 'set eth1 to down'
+  command: 'ifdown eth1'
 
-- name: "set eth1 to up"
-  shell: "ifup eth1"
+- name: 'set eth1 to up'
+  command: 'ifup eth1'
 
-- name: "check eth1 settings"
-  shell: "ip address show eth1"
+- name: 'check eth1 settings'
+  command: 'ip address show eth1'
