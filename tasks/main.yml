@@ -16,6 +16,6 @@
     group: "root"
     mode: "{{ ifcfg_mode }}"
   notify:
-    - "set eth1 to down"
-    - "set eth1 to up"
-    - "check eth1 settings"
+    - "Set eth1 to down"
+    - "Set eth1 to up"
+    - "Check eth1 settings"

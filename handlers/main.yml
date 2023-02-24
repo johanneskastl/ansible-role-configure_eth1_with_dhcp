@@ -1,11 +1,11 @@
 ---
 # configure_eth1/handlers/main.yml
 
-- name: 'set eth1 to down'
+- name: 'Set eth1 to down'
   ansible.builtin.command: 'ifdown eth1'
 
-- name: 'set eth1 to up'
+- name: 'Set eth1 to up'
   ansible.builtin.command: 'ifup eth1'
 
-- name: 'check eth1 settings'
+- name: 'Check eth1 settings'
   ansible.builtin.command: 'ip address show eth1'
