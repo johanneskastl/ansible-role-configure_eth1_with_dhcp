@@ -8,7 +8,7 @@
     - "vars_{{ ansible_os_family }}.yml"
     - "vars_default.yml"
 
-- name: "create ifcfg-eth1 in {{ ifcfg_location }}"
+- name: "Create ifcfg-eth1 in {{ ifcfg_location }}"
   ansible.builtin.template:
     src: "templates/ifcfg-eth1.j2"
     dest: "{{ ifcfg_location }}/ifcfg-eth1"
