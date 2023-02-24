@@ -2,7 +2,7 @@ galaxy_info:
   role_name: 'configure_eth1_with_dhcp'
   namespace: 'johanneskastl'
   author: 'Johannes Kastl'
-  description: 'Configure eth1 for DHCP '
+  description: 'Configure eth1 for DHCP'
   company: 'B1 Systems GmbH'
 
   license: 'BSD-3-Clause'
