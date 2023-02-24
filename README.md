@@ -25,7 +25,7 @@ Example Playbook
 
     - hosts: servers
       roles:
-         - { role: 'johanneskastl.configure_eth1_with_dhcp' }
+         - role: 'johanneskastl.configure_eth1_with_dhcp'
 
 License
 -------
